@@ -1,0 +1,15 @@
+/*
+3 diffrebt query
+*/
+select DISTINCT city from STATION where city REGEXP"^[aeiou].*[AEIOU]$";
+
+
+SELECT DISTINCT city
+FROM   station
+WHERE  city RLIKE '^[aeiouAEIOU].*[aeiouAEIOU]$';
+
+
+SELECT distinct City FROM STATION WHERE City LIKE '[AEIOU]%[AEIOU]';
+
+
+SELECT distinct City FROM STATION WHERE City LIKE '[A,E,I,O,U]%[A,E,I,O,U]';
